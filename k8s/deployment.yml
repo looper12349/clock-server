@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: clock-server
-        image: ${DOCKERHUB_USERNAME}/clock-server:latest
+        image: ai29/clock-server:latest
         ports:
         - containerPort: 3000
         env:
