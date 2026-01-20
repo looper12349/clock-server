@@ -1,0 +1,30 @@
+{
+  "name": "clock-server",
+  "version": "1.0.0",
+  "description": "Simple clock server with health check",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node src/index.js",
+    "test": "jest --coverage",
+    "lint": "eslint src test"
+  },
+  "keywords": ["clock", "health-check"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.50.0",
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ]
+  }
+}
